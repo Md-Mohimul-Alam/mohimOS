@@ -1,0 +1,16 @@
+# Large binary files
+*.img
+*.img.lock
+
+# Kernel source – ignore everything inside linux-*/
+linux-*/
+# … but keep the kernel configuration file
+!linux-*/.config
+# … and ignore any other files inside that directory
+linux-*/*
+
+# Unpacked rootfs
+rootfs/
+
+# Temporary files
+*.log
